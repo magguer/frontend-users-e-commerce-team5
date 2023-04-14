@@ -65,7 +65,7 @@ function Order() {
                       order.status.name === "Received"
                         ? "opacity-100"
                         : "opacity-50"
-                    }w-8`}
+                    } w-8`}
                     src="https://icon-library.com/images/icon-process/icon-process-25.jpg"
                     alt=""
                   />
@@ -77,7 +77,7 @@ function Order() {
                       order.status.name === "Received"
                         ? "opacity-100"
                         : "opacity-50"
-                    }w-8`}
+                    } w-8`}
                     src=" https://cdn.onlinewebfonts.com/svg/img_307755.png"
                     alt=""
                   />
@@ -96,7 +96,7 @@ function Order() {
                       order.status.name === "Received"
                         ? "opacity-100"
                         : "opacity-50"
-                    }w-8`}
+                    } w-8`}
                     src="https://cdn-icons-png.flaticon.com/512/665/665939.png"
                     alt=""
                   />
