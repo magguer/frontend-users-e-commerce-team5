@@ -46,7 +46,7 @@ function Orders() {
                 </div>
                 <hr className="opacity-20" />
                 <div className="ml-0 tablet:ml-10 mb-16 mt-5">
-                  <h3 className="font-light  text-sm tablet:text-lg">
+                  <h3 className="font-light text-sm tablet:text-lg">
                     Products:
                   </h3>
                   {order.products.map((product, i) => {

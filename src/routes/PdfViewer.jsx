@@ -65,7 +65,7 @@ function PdfViewer() {
           to={"/orders"}
           className="bg-bgTertiaryColor text-textPrimary px-4 py-2 text-lg font-primaryFont"
         >
-          Orders
+          View Orders
         </Link>
       </div>
 

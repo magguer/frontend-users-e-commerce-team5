@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function OrderProduct({ detail }) {
   return (
-    <div className="flex mt-2 px-2 laptop:px-10 py-4 border rounded-lg">
+    <div className="flex my-2 px-2 laptop:px-6 py-4 border rounded-lg">
       <div className="flex items-center">
         <img
           src={`${process.env.REACT_APP_SUPABASE_BUCKET}/${detail.product.image[0]}`}

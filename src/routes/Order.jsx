@@ -47,7 +47,7 @@ function Order() {
               <h4 className="text-textPrimary font-light">ID: {order._id}</h4>
             </div>
           </div>
-          <div className="pt-10 mx-8 tablet:mx-20">
+          <div className="py-10 mx-8 tablet:mx-20">
             <div className="mb-20 flex mx-0 tablet:mx-20">
               <div
                 className={`h-[9px] w-full relative ${
@@ -103,11 +103,17 @@ function Order() {
                 </div>
               </div>
             </div>
-            <h3> Products: </h3>
-            <div className="py-5 mt-2 border-t border-bgFourthColor gap-5 grid w-full justify-center tablet:flex">
+            <h3 className="font-primaryFont"> Products: </h3>
+            <div className="py-5 my-2 border-y border-bgFourthColor gap-5 grid w-full justify-center tablet:flex">
               {order.products.map((detail, i) => (
                 <OrderProduct key={i} detail={detail} />
               ))}
+            </div>
+            <div className="w-full flex justify-end">
+              <div className="flex gap-3 text-lg tablet:text-xl font-primaryFont">
+                <h3> Total: </h3>
+                <h3> U$D {order.totalPrice.toFixed(2)} </h3>
+              </div>
             </div>
           </div>
         </div>
