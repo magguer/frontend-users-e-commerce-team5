@@ -109,12 +109,12 @@ function LoginComponent() {
             >
               Login
             </button>
-            <button
+            {/*  <button
               onClick={handleLoginWithGoogle}
               className=" bg-bgPrimaryColor w-full flex justify-center text-center border border-bgFourthColor  py-1 mt-2"
             >
               <GoogleIcon className="mr-1" /> Login whith Google
-            </button>
+            </button> */}
           </div>
         </div>
         <div className="w-full">
