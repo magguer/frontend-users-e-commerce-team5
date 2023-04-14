@@ -1,6 +1,7 @@
 import React from "react";
 import BillingPdf from "../components/BillingPdf";
 import { PDFDownloadLink } from "@react-pdf/renderer";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
@@ -28,7 +29,7 @@ function PdfViewer() {
 
   return (
     <div className="mx-12 pt-[120px]">
-      <img className="w-[650px] mx-auto" src={logo} alt="" />
+      <img className="w-[450px] mx-auto" src={logo} alt="" />
       <h1 className="category-title text-[3rem] text-textSecondary text-center mb-2 mt-16">
         Thanks for your purchase
       </h1>
@@ -38,7 +39,8 @@ function PdfViewer() {
       <h2 className="text-lg font-bold text-textSecondary text-center mb-6">
         INFORMATION BY DOWNLOADING IT ABOVE
       </h2>
-      <div className="flex justify-center cols-2">
+
+      <div className="flex justify-center gap-3">
         <div>
           <PDFDownloadLink
             document={<BillingPdf bill={bill} />}
@@ -46,17 +48,25 @@ function PdfViewer() {
           >
             {({ loading }) =>
               loading ? (
-                <button className="bg-bgTertiaryColor text-textPrimary px-4 py-4  font-primaryFont ">
+                <button className="bg-bgTertiaryColor text-textPrimary px-4 py-3  font-primaryFont ">
                   loading document...
                 </button>
               ) : (
-                <button className="bg-bgTertiaryColor text-textPrimary px-4 py-4 text-lg font-primaryFont ">
-                  DOWNLOAD
-                </button>
+                <>
+                  <button className="bg-bgTertiaryColor text-textPrimary px-4 py-2 text-lg font-primaryFont ">
+                    DOWNLOAD
+                  </button>
+                </>
               )
             }
           </PDFDownloadLink>
         </div>
+        <Link
+          to={"/orders"}
+          className="bg-bgTertiaryColor text-textPrimary px-4 py-2 text-lg font-primaryFont"
+        >
+          Orders
+        </Link>
       </div>
 
       <div>

@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { Link } from "react-router-dom";
 
 function Subscribe() {
   const form = useRef();
@@ -63,36 +64,36 @@ function Subscribe() {
           <div className="w-80 justify-center mt-10 tablet:mt-0">
             <h3 className="text-l font-semibold mb-5">Follow us: </h3>
             <div className="grid grid-cols-5">
-              <div>
+              <a target="_blank" href={"https://github.com/Alan08t"}>
                 <img
                   src="https://images.ctfassets.net/m8onsx4mm13s/7z1pAOQBLHEuVOVM6LRPcx/b780b4f8014da92d2580f7ee4e2db124/icon-instagram.svg"
                   alt=""
                 />
-              </div>
-              <div>
+              </a>
+              <a target="_blank" href={"https://github.com/FedeDiaz31"}>
                 <img
                   src="https://images.ctfassets.net/m8onsx4mm13s/35Oaae1J6dqWxeuNAvrNwa/b25005683fd9757a05a84e4178b83512/icon-twitter.svg"
                   alt=""
                 />
-              </div>
-              <div>
+              </a>
+              <a target="_blank" href={"https://github.com/Alan08t"}>
                 <img
                   src="https://images.ctfassets.net/m8onsx4mm13s/StLA124Qs8nCQs8QAfEhs/ee76f7cd2e1231ff501e87a86adfb078/icon-youtube.svg"
                   alt=""
                 />
-              </div>
-              <div>
+              </a>
+              <a target="_blank" href={"https://github.com/NachoVidal27"}>
                 <img
                   src="https://images.ctfassets.net/m8onsx4mm13s/4LXqNqHU1A4TwofkuQiyTG/eafd61f24af8995e99e8e23f9e348952/icon-facebook.svg"
                   alt=""
                 />
-              </div>
-              <div>
+              </a>
+              <a target="_blank" href={"https://github.com/Otta25"}>
                 <img
                   src="https://images.ctfassets.net/m8onsx4mm13s/4wAHtxp4Tw35DxLOA1jgcM/6e020e6de55d1e02c088b32752763df5/icon-msg.svg"
                   alt=""
                 />
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -139,36 +140,36 @@ function Subscribe() {
             <div className="mt-10 tablet:mt-0">
               <h3 className="text-l font-semibold mb-5">Follow us: </h3>
               <div className="flex gap-5">
-                <div>
+                <a target="_blank" href={"https://github.com/Alan08t"}>
                   <img
                     src="https://images.ctfassets.net/m8onsx4mm13s/7z1pAOQBLHEuVOVM6LRPcx/b780b4f8014da92d2580f7ee4e2db124/icon-instagram.svg"
                     alt=""
                   />
-                </div>
-                <div>
+                </a>
+                <a target="_blank" href={"https://github.com/FedeDiaz31"}>
                   <img
                     src="https://images.ctfassets.net/m8onsx4mm13s/35Oaae1J6dqWxeuNAvrNwa/b25005683fd9757a05a84e4178b83512/icon-twitter.svg"
                     alt=""
                   />
-                </div>
-                <div>
+                </a>
+                <a target="_blank" href={"https://github.com/magguer"}>
                   <img
                     src="https://images.ctfassets.net/m8onsx4mm13s/StLA124Qs8nCQs8QAfEhs/ee76f7cd2e1231ff501e87a86adfb078/icon-youtube.svg"
                     alt=""
                   />
-                </div>
-                <div>
+                </a>
+                <a target="_blank" href={"https://github.com/NachoVidal27"}>
                   <img
                     src="https://images.ctfassets.net/m8onsx4mm13s/4LXqNqHU1A4TwofkuQiyTG/eafd61f24af8995e99e8e23f9e348952/icon-facebook.svg"
                     alt=""
                   />
-                </div>
-                <div>
+                </a>
+                <a target="_blank" href={"https://github.com/Otta25"}>
                   <img
                     src="https://images.ctfassets.net/m8onsx4mm13s/4wAHtxp4Tw35DxLOA1jgcM/6e020e6de55d1e02c088b32752763df5/icon-msg.svg"
                     alt=""
                   />
-                </div>
+                </a>
               </div>
             </div>
           </div>
