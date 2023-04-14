@@ -28,7 +28,6 @@ const CheckOut = () => {
   const cart = useSelector((state) => state.cart);
   const dispatch = useDispatch();
 
-  console.log(user);
   const userData = {
     firstname: user.firstname,
     lastname: user.lastname,
