@@ -59,14 +59,25 @@ function Order() {
               >
                 <div className="absolute left-[-20px] p-1 top-4 rounded-full">
                   <img
-                    className="w-8"
+                    className={`${
+                      order.status.name === "Processing" ||
+                      order.status.name === "Sent" ||
+                      order.status.name === "Received"
+                        ? "opacity-100"
+                        : "opacity-50"
+                    }w-8`}
                     src="https://icon-library.com/images/icon-process/icon-process-25.jpg"
                     alt=""
                   />
                 </div>
                 <div className="absolute right-[-10px] p-1 rounded-full top-4 ">
                   <img
-                    className="w-8"
+                    className={`${
+                      order.status.name === "Sent" ||
+                      order.status.name === "Received"
+                        ? "opacity-100"
+                        : "opacity-50"
+                    }w-8`}
                     src=" https://cdn.onlinewebfonts.com/svg/img_307755.png"
                     alt=""
                   />
@@ -81,7 +92,11 @@ function Order() {
               >
                 <div className="absolute right-[-10px] top-4  rounded-full">
                   <img
-                    className="w-8"
+                    className={`${
+                      order.status.name === "Received"
+                        ? "opacity-100"
+                        : "opacity-50"
+                    }w-8`}
                     src="https://cdn-icons-png.flaticon.com/512/665/665939.png"
                     alt=""
                   />
