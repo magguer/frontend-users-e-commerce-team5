@@ -24,7 +24,6 @@ function LoginComponent() {
       data: { password, email },
       method: "post",
     });
-
     dispatch(login(response.data.user));
     if (response.data.user.token) {
       handleCloseLogin();

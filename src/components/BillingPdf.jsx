@@ -82,7 +82,7 @@ const BillingPdf = ({ bill }) => {
       </Document>
     );
   } else {
-    return <div>{console.log("no cargo")}</div>;
+    return <div></div>;
   }
 };
 

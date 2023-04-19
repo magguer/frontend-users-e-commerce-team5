@@ -66,7 +66,7 @@ function Header() {
   return (
     <>
       {/*      Login / User Component */}
-      {user ? (
+      {user & showUser ? (
         <div
           className={
             showUser
